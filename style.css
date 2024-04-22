@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --principal: #3E608C;
+    --secu:#71BBD9;
+    --ter: #A0F2F2;
+    --cuar: #88F2DF;
+    --quin: #F29494;
+}
+
+#pc{
+    display: none;
+}
+
+#cel{
+    display: block;
+}
+.lista{
+    display: none;
+}
+nav ul li:hover>ul.lista{
+    display: block;
+}
+nav, ul, li, a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--ter);
+}
+
+#titulo{
+    font-size: 3.5vh;
+}
+
+body{
+    background-color: var(--principal);
+    color: var(--cuar);
+    width: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+
+#foto1{
+    width: 40vh;
+}
+#foto2{
+    display: none;
+}
+#foto3{
+    width: 40vh;
+    margin-top: 3%;
+}
+#foto4{
+    width: 40vh;
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background-color: var(--secu);
+    margin-top: 5%;
+    color: var(--principal);
+    border-radius: 50%;
+}
+
+.texto1{
+    width: 100%;
+    font-size: 200%;
+    background-color: var(--ter);
+    padding: 3%;
+    border: 5px dashed var(--principal);
+}
+.texto2{
+    width: 100%;
+    font-size: 200%;
+    background-color: var(--ter);
+    padding: 3%;
+    border: 5px dashed var(--principal);
+}
+
+@media screen and (min-width: 768px){
+    #pc{
+        display: block;
+    }
+    #cosas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-decoration: none;
+        font-size: 3vh;
+    }
+    #celu{
+        display: none;
+    }
+    body{
+        width: 100%;
+    }
+    .caja{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2%;
+        margin-top: 3%;
+    }
+    .texto1{
+        font-size: 120%;
+        margin-left: 6%;
+        width: 50%;
+        background-color: var(--ter);
+        padding: 3%;
+        border: 5px dashed var(--principal);
+    }
+    .texto2{
+        font-size: 120%;
+        margin-right: 6%;
+        width: 50%;
+        background-color: var(--ter);
+        padding: 3%;
+        border: 5px dashed var(--principal);
+    }
+    #foto1{
+        width: 50vh;
+    }
+    #foto2{
+        width: 40vh;
+        display: block;
+    }
+    #foto3{
+        width: 40vh;
+        margin-top: 1%;
+    }
+    #foto4{
+        display: none;
+    }
+}
